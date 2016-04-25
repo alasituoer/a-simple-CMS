@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'hot/style.css' %}" />
+    </head>
+    <body> 
+        <h1 id="article_title">{{ articlebrief.article_title }}</h1>
+        <br />
+        <div id="article_text">
+        {% for article in articlebrief.articlecontent_set.all %}
+            {{ article.article_text|safe }}
+        {% endfor %}
+        </div>
+    </body>
+</html>

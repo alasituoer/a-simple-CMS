@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'hot/style.css' %}" />
+
+<body class="pace-done">
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+            <div class="span9">
+                <div class="list_article">
+
+            {% if latest_article_list %}
+                {% for article in latest_article_list %}
+                    <div class="single_fake">
+
+                        <div class="single">
+                            <div class="single_left">
+                                <div class="article_title abs-title">
+                                    <a href="{% url 'hot:detail' article.id %}"
+                                       class="article-list-title">{{ article.article_title }}</a></div>
+                                <div class="article_cut">
+                                    <p>{{ article.article_cut }}</p></div></div>
+                            <div class="article_thumb">
+                           <!--     <img src="{% static "hot/images/11.jpeg" %}"/> --!>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="tip meta-tip">
+                            <span class="cut cut28">{{ article.article_from }}</span>
+                            <span>
+                                <i class="icon-time icon"></i>
+                                {{ article.pub_date }} </span>
+                        </div>
+
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+                </div>
+            </div>
+
+            <div class="span3 small-span-margin">
+                <div class="frd_pos">
+                   <div style="margin-top: 5px; max-width: 230px;">
+                       <a href="http://www.jxdmyx.com">
+                           <img src="{% static "hot/images/jpush120.jpg" %}">
+                       </a>
+                   </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

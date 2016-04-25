@@ -1,0 +1,140 @@
+a {
+    color: green;
+}
+
+.single {
+    min-height: 40px;
+    clear: both    
+}
+
+.single .single_left {
+    float: left;
+    width: 74%;
+    padding-top: 1px
+}
+
+.single_fake {
+    margin: 0 0 2px 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1)
+}
+
+.article_title {
+    line-height: 1.3em;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 10px 0 10px 
+}
+
+.article_title a:link {
+    color: #0aa284;
+    text-decoration: none
+}
+.article_title a:visited {
+    color: #0aa284;
+    text-decoration: none
+}
+.article_title a:hover, a:focus {
+    color: #000000;
+    text-decoration: none
+}
+.article_title a:active {
+    color: #ff7f24;
+    text-decoration: underline
+}
+
+.article_cut {
+    line-height: 1.6em;
+    margin-bottom: 0;
+    color: #888;
+    padding: 0 10px 0 10px
+}
+
+.article_thumb {
+    margin-left: 75%;
+    padding-top: 10px;
+    margin-bottom: 10px
+}
+
+.article_thumb img {
+    height: 100px;
+    vertical-align: middle;
+    border: 1px solid #ddd
+}
+
+.clear {
+    clear: both;
+}
+
+.tip {
+    font-size: 13px;
+    color: #999;
+    padding-left: 10px
+}
+
+.meta-tip {
+    margin-bottom: 10;
+    padding: 0 10px 15px 10px
+}
+
+.tip span {
+    margin-right: 30px
+}
+
+.cut {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis
+}
+
+.cut28 {
+    max-width: 28%
+}
+
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+    * zoom: 1
+}
+
+.row-fluid {
+    width: 100%;
+    * zoom:1
+}
+
+.span3 {
+    width: 220px
+}
+
+.span9 {
+    width: 700px
+}
+
+.row-fluid .span9 {
+    width: 74.46808510638297%;
+    * width: 74.41489361702126%
+}
+
+.row-fluid .span3 {
+    width: 23.404255319148934%;
+    * width: 23.351063829787233%
+}
+
+.small-span-margin {
+    margin-left: 12px !important
+}
+
+body {
+    margin: 0;
+/*    background-image: url(images/background.jpg); */
+    background-size:100% 100%;
+}
+
+#article_title {
+    padding: 10% 10% 0 10%;
+}
+
+#article_text {
+    padding: 0 10% 10% 10%;
+}
